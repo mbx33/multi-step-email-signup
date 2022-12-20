@@ -1,0 +1,152 @@
+.flex-group {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+button[type='submit'] {
+	background-color: green;
+	color: white;
+}
+
+button[type='submit']:hover {
+	background-color: #4caf50;
+	color: white;
+}
+
+button {
+	padding: 0.865rem 1.5rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	color: #000;
+	background: #fff;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #222;
+	color: #ccc;
+	transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+	background: #ccc;
+	color: #fff;
+	cursor: not-allowed;
+}
+
+.progress-container {
+	font-size: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	max-width: 100%;
+	width: 350px;
+	margin: 2rem auto;
+}
+
+.progress-container::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 5px;
+	width: 100%;
+	background-color: #e0e0e0;
+	z-index: -1;
+}
+
+.progress {
+	background-color: #3498db;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 5px;
+	width: 0%;
+	z-index: -1;
+	transition: width 0.3s ease-in-out;
+}
+
+.active-2 {
+	width: 33.33%;
+}
+
+.active-3 {
+	width: 66.66%;
+}
+
+.active-4 {
+	width: 100%;
+}
+
+.circle {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	color: #000000;
+	border: 3px solid #e0e0e0;
+	transition: ease all 0.3s;
+}
+
+.circle.active {
+	background-color: #3498db;
+	border-color: #3498db;
+	color: #fff;
+}
+
+form {
+	width: 100%;
+	max-width: 600px;
+	min-height: 258px;
+	margin: 0 auto;
+	padding: 1rem;
+	background: #333;
+	border-radius: 5px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 1.2rem;
+	font-family: 'Open Sans', sans-serif;
+	color: #ccc;
+}
+
+form input {
+	font-size: 1.5rem;
+}
+
+form label {
+	font-size: 1.3rem;
+}
+
+input {
+	display: block;
+	margin-bottom: 5px;
+	padding: 0.865rem 1.5rem;
+	border: none;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	color: #ccc;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+input:has(:focus, :active) {
+	outline: none;
+	border-color: #333;
+}
