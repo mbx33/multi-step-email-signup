@@ -5,7 +5,7 @@ import Form from '../multistep-form/Form';
 function App() {
 	return (
 		<div className="App">
-			<h1>Different Components</h1>
+			<h1>Email Signup</h1>
 			<Form />
 		</div>
 	);

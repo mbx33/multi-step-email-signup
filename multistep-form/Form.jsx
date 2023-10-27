@@ -71,7 +71,6 @@ const Form = () => {
 
 	return (
 		<div>
-			<h1>Multi Step Form</h1>
 			{/* <h2>Step {step}</h2> */}
 			{/* //this is the progress bar */}
 			<div className="progress-container">
